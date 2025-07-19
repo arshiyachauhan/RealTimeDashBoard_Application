@@ -1,4 +1,4 @@
-##📊 RealTime Dashboard Application
+## 📊 RealTime Dashboard Application
 
 A full-stack web application for real-time personal productivity and finance management, featuring a Java Spring Boot backend and a React + Bootstrap frontend.
 
