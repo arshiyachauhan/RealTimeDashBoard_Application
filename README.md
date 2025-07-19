@@ -1,4 +1,4 @@
-# RealTime Dashboard Application
+##📊 RealTime Dashboard Application
 
 A full-stack web application for real-time personal productivity and finance management, featuring a Java Spring Boot backend and a React + Bootstrap frontend.
 
@@ -15,7 +15,7 @@ A full-stack web application for real-time personal productivity and finance man
 - **Reminders:** Set reminders, optionally linked to tasks.
 - **Responsive UI:** Modern, mobile-friendly interface with sidebar navigation and top bar.
 
----
+
 
 ## Backend: Java Spring Boot
 
@@ -56,7 +56,6 @@ A full-stack web application for real-time personal productivity and finance man
 
 - All endpoints (except signup/login) require a JWT token in the `Authorization: Bearer <token>` header.
 
----
 
 ## Frontend: React + Bootstrap
 
@@ -93,7 +92,7 @@ A full-stack web application for real-time personal productivity and finance man
 - **Reminders:** Set and manage reminders
 - **Sidebar & Header:** Navigation and user info/logout
 
----
+
 
 ## Usage
 
@@ -102,7 +101,7 @@ A full-stack web application for real-time personal productivity and finance man
 3. **All data is scoped to your user account.**
 4. **Logout** via the top bar to clear your session.
 
----
+
 
 ## API Authentication
 - Obtain a JWT token via `/api/login`.
@@ -111,14 +110,14 @@ A full-stack web application for real-time personal productivity and finance man
   Authorization: Bearer <your_token>
   ```
 
----
+
 
 ## Development & Contribution
 - Fork the repo and create a feature branch.
 - Open a pull request with your changes.
 - Please follow code style and add documentation/comments where needed.
 
----
+
 
 ## License
 This project is licensed under the MIT License.
