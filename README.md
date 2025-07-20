@@ -66,7 +66,6 @@ A full-stack web application for real-time personal productivity and finance man
 - Recharts (for charts)
 
 
----
 
 ## Setup Instructions
 
@@ -121,7 +120,7 @@ A full-stack web application for real-time personal productivity and finance man
   ```
 - All endpoints (except signup/login) require a JWT token.
 
----
+
 
 ## API Endpoints
 
@@ -148,11 +147,6 @@ A full-stack web application for real-time personal productivity and finance man
 - **Finance:** Income/expense tracking, summary chart
 - **Reminders:** Set and manage reminders, notification bell
 - **Sidebar & Header:** Navigation, user info, logout
-
-
-## Example Screenshots
-
-
 
 
 ## Development & Contribution
