@@ -2,7 +2,6 @@
 
 A full-stack web application for real-time personal productivity and finance management, featuring a Java Spring Boot backend and a React + Bootstrap frontend.
 
----
 
 ## Features
 
@@ -66,7 +65,27 @@ A full-stack web application for real-time personal productivity and finance man
 - React Router DOM
 - Recharts (for charts)
 
-### **Setup**
+
+---
+
+## Setup Instructions
+
+### 1. Backend (Spring Boot)
+
+1. **Install Java 17+ and Maven**
+2. **Configure database:**
+   - Edit `src/main/resources/application.properties` for your DB settings (H2 for dev, MySQL for prod).
+3. **Build and run:**
+   ```sh
+   cd realtime-dashboard
+   mvn clean install
+   mvn spring-boot:run
+   ```
+4. **API Base URL:**  
+   `http://localhost:8080/api`
+
+### 2. Frontend (React)
+
 1. **Navigate to the frontend directory:**
    ```sh
    cd frontend
@@ -79,18 +98,8 @@ A full-stack web application for real-time personal productivity and finance man
    ```sh
    npm start
    ```
-4. **Frontend URL:**
-   - `http://localhost:3000`
-
-### **Main Pages & Components**
-- **Login / Signup:** User authentication
-- **Dashboard:** Overview of all modules
-- **Metrics:** Real-time metrics CRUD
-- **Tasks:** Task management
-- **Notes:** Notes CRUD
-- **Finance:** Income/expense tracking, summary chart
-- **Reminders:** Set and manage reminders
-- **Sidebar & Header:** Navigation and user info/logout
+4. **Frontend URL:**  
+   `http://localhost:3000`
 
 
 
@@ -104,20 +113,57 @@ A full-stack web application for real-time personal productivity and finance man
 
 
 ## API Authentication
+
 - Obtain a JWT token via `/api/login`.
 - Add the token to all protected requests:
   ```
   Authorization: Bearer <your_token>
   ```
+- All endpoints (except signup/login) require a JWT token.
+
+---
+
+## API Endpoints
+
+| Resource      | Endpoint                        | Methods         |
+|--------------|----------------------------------|-----------------|
+| Auth         | `/signup`, `/api/login`          | POST            |
+| Metrics      | `/api/metrics`                   | GET, POST, PUT, DELETE |
+| Tasks        | `/api/tasks`                     | GET, POST, PUT, DELETE |
+| Notes        | `/api/notes`                     | GET, POST, PUT, DELETE |
+| Transactions | `/api/transactions`              | GET, POST, PUT, DELETE |
+| Reminders    | `/api/reminders`                 | GET, POST, PUT, DELETE |
+
+- All endpoints (except signup/login) require a JWT token in the `Authorization: Bearer <token>` header.
+
+---
+
+## Main Pages & Components
+
+- **Login / Signup:** User authentication
+- **Dashboard:** Overview of all modules, quick stats, recent activity
+- **Metrics:** Real-time metrics CRUD
+- **Tasks:** Task management
+- **Notes:** Notes CRUD
+- **Finance:** Income/expense tracking, summary chart
+- **Reminders:** Set and manage reminders, notification bell
+- **Sidebar & Header:** Navigation, user info, logout
+
+
+## Example Screenshots
+
 
 
 
 ## Development & Contribution
+
 - Fork the repo and create a feature branch.
 - Open a pull request with your changes.
 - Please follow code style and add documentation/comments where needed.
 
 
-
 ## License
+
 This project is licensed under the MIT License.
+
+---
