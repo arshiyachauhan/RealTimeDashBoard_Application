@@ -135,7 +135,7 @@ A full-stack web application for real-time personal productivity and finance man
 
 - All endpoints (except signup/login) require a JWT token in the `Authorization: Bearer <token>` header.
 
----
+
 
 ## Main Pages & Components
 
@@ -159,5 +159,3 @@ A full-stack web application for real-time personal productivity and finance man
 ## License
 
 This project is licensed under the MIT License.
-
----
